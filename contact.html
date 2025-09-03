@@ -1,0 +1,187 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Assets/css/styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (Free, latest 6.x) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us</title>
+    
+</head>
+<style>
+   body {
+      font-family: 'Pacifico', cursive;
+      background-color: #ffe5e5;
+      margin: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .social-icons i {
+      color: black;
+      font-size: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    } 
+</style>
+<body>
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fs-5  ">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Afriplates</a>
+
+      <!-- Hamburger Button (for small screens) -->
+
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+        <!-- Centered Nav Items -->
+        <ul class="navbar-nav mx-auto gap-lg-5" style="color: rgba(0, 0, 0, 0.975);">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Blog.html">Blog</a>
+          </li>
+ 
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social Icons on Right -->
+        <div class="social-icons d-flex gap-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr> 
+
+  <section class="container mt-5 mb-5">
+  <div class="row mb-4">
+    
+    <!-- About Restaurant -->
+    <div class="col-lg-6 mb-4">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="text-muted">
+        At <strong>Foodieland</strong>, food is more than just a meal – it’s an experience.
+        From authentic Nigerian delicacies to modern twists on traditional recipes, our
+        mission is to bring deliciousness to your table. Have questions, feedback, or
+        just want to say hi? We’d love to hear from you!
+      </p>
+      
+      <!-- Contact Details -->
+      <ul class="list-unstyled mt-4">
+        <li><i class="bi bi-geo-alt-fill me-2"></i><strong>Address:</strong><br>No. 131, Okpanam Road, Asaba, Delta State, Nigeria</li>
+        <li class="mt-2"><i class="bi bi-telephone-fill me-2"></i><strong>Phone:</strong><br>+234-911-094-2029</li>
+        <li class="mt-2"><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong><br>info@foodieland.ng</li>
+      </ul>
+
+      <!-- Social Media -->
+      <div class="mt-4">
+        <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#" class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-4"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <!-- Form & Map -->
+    <div class="col-lg-6">
+      <div class="card shadow rounded-3 p-4">
+        <h4 class="fw-bold mb-4">Get in Touch</h4>
+        
+        <!-- Sign Up & Suggestion Form -->
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Sign up for Updates</label>
+            <div class="input-group">
+              <input type="email" id="email" class="form-control" placeholder="Your email address" required>
+              <button class="btn btn-dark text-white" type="submit">Sign Up</button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="suggestion" class="form-label fw-semibold">Your Suggestions</label>
+            <textarea id="suggestion" class="form-control" rows="4"
+                      placeholder="Write your message or feedback here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="mt-4">
+        <iframe
+          title="Foodieland Location - Okpanam Road Asaba"
+          src="https://www.google.com/maps?q=Okpanam%20Road%2C%20Asaba%2C%20Delta%20State%2C%20Nigeria&output=embed"
+          width="100%" height="250" style="border:0; border-radius: 8px;"
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <!-- Navigation Links -->
+    <ul class="nav justify-content-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="mb-0 text-white">
+      &copy; 2025 <strong>Afriplates</strong>. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>

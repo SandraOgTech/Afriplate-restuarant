@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Assets/css/styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (Free, latest 6.x) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipes</title>
+    
+</head>
+<style>
+   body {
+      font-family: 'Pacifico', cursive;
+      background-color: #ffe5e5;
+      margin: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .social-icons i {
+      color: black;
+      font-size: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    } 
+</style>
+  
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fs-5  ">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Afriplates</a>
+
+      <!-- Hamburger Button (for small screens) -->
+
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+        <!-- Centered Nav Items -->
+        <ul class="navbar-nav mx-auto gap-lg-5" style="color: rgba(0, 0, 0, 0.975);">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Blog.html">Blog</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social Icons on Right -->
+        <div class="social-icons d-flex gap-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr> 
+
+  <!-- hero -->
+   <section class="container-fluid mt-5 py-5" style="background-color: #fdf6f0; border-radius: 20px;">
+  <!-- Heading & Tagline -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold">Featured Recipe: Beans</h1>
+    <p class="text-muted fs-5">Nutritious, delicious, and ready in just 30 minutes!</p>
+  </div>
+
+  <div class="row align-items-center">
+    
+    <!-- Left Column (Image - full width on mobile) -->
+    <div class="col-lg-8 col-md-7 col-12 p-0">
+      <img src="./Assets/Beans.webp" alt="Beans" class="img-fluid w-100 rounded shadow">
+    </div>
+
+    <!-- Right Column (Nutrition Info + Prep Time + Button) -->
+    <div class="col-lg-4 col-md-5 col-12 p-4">
+      <h2 class="mb-3 text-center text-md-start">Nutrition Information</h2>
+      
+      <!-- Nutrition Table -->
+      <table class="table table-sm table-bordered bg-white">
+        <tbody>
+          <tr>
+            <td><strong>Calories</strong></td>
+            <td>250 kcal</td>
+          </tr>
+          <tr>
+            <td><strong>Protein</strong></td>
+            <td>12 g</td>
+          </tr>
+          <tr>
+            <td><strong>Carbohydrates</strong></td>
+            <td>35 g</td>
+          </tr>
+          <tr>
+            <td><strong>Fat</strong></td>
+            <td>8 g</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Prep Time Box -->
+      <div class="mt-4 p-3 bg-white rounded shadow-sm text-center text-md-start">
+        <h5 class="mb-1">Estimated Preparation Time</h5>
+        <p class="mb-0"><strong>30 minutes</strong></p>
+      </div>
+
+      <!-- Call-to-Action Button -->
+      <div class="mt-4 text-center text-md-start">
+        <a href="#" class="btn btn-dark px-4 py-2 rounded-pill cook-btn">
+          🍲 Cook Now
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- directions  -->
+<section class="container mt-5">
+  <div class="row">
+    
+    <!-- Ingredients Column -->
+    <div class="col-lg-5 col-md-6 col-12 mb-4">
+      <h2 class="fw-bold mb-3">Ingredients</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">2 cups beans</li>
+        <li class="list-group-item">1 medium onion (chopped)</li>
+        <li class="list-group-item">2 tbsp of grounded crayfish</li>
+        <li class="list-group-item">2 tbsp Palm oil</li>
+        <li class="list-group-item">1 tsp salt</li>
+        <li class="list-group-item">1 tsp ground pepper</li>
+        <li class="list-group-item">4 cups water</li>
+      </ul>
+    </div>
+
+    <!-- Directions Column -->
+    <div class="col-lg-7 col-md-6 col-12">
+      <h2 class="fw-bold mb-3">Directions</h2>
+      <ol class="list-group list-group-numbered list-group-flush">
+        <li class="list-group-item">Rinse the beans thoroughly and set aside.</li>
+        <li class="list-group-item">In a pot, heat the Palm oil and sauté onions until fragrant.</li>
+        <li class="list-group-item">Add the beans, water, salt, and pepper. Stir well.</li>
+        <li class="list-group-item">Bring to a boil, then reduce the heat and simmer for 25–30 minutes.</li>
+        <li class="list-group-item">Stir occasionally until the beans are tender and the water is mostly absorbed.</li>
+        <li class="list-group-item">Serve hot with your favorite sides or toppings.</li>
+      </ol>
+    </div>
+
+    <!-- newsletter -->
+<div class="container mt-5">
+  <div class="row justify-content-center text-center"
+       style="background-color: #f1d7da; border-radius: 30px; padding: 2rem;">
+    
+    <div class="col-lg-8">
+      <h1>Deliciousness to your inbox</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio distinctio, rem in labore alias dolore!</p>
+      
+      <form class="d-flex flex-column flex-sm-row justify-content-center align-items-center mt-4 gap-2">
+        <input 
+          type="email" 
+          class="form-control bg-transparent border-dark text-center rounded-pill" 
+          placeholder="Email Address"
+          style="max-width: 300px;"
+        >
+        <button type="submit" class="btn btn-dark text-white rounded-pill w-100 w-sm-auto custom-btn">
+          Submit
+        </button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- footer -->
+ <footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <!-- Navigation Links -->
+    <ul class="nav justify-content-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="mb-0 text-white">
+      &copy; 2025 <strong>Afriplates</strong>. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

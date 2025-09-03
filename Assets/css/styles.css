@@ -1,0 +1,28 @@
+#Recipes:hover {
+     color: #ffe5e5 !important;
+}
+
+.fixed-img {
+  height: 200px;       /* Same height for all images */
+  object-fit: cover;   /* Crops image without stretching */
+}
+
+.custom-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+ .cook-btn {
+    transition: all 0.3s ease-in-out;
+  }
+  .cook-btn:hover {
+    background-color: #ff6c2d !important; /* Warm orange */
+    color: #fff !important;
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }

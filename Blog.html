@@ -1,0 +1,228 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Assets/css/styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (Free, latest 6.x) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+    
+</head>
+<style>
+   body {
+      font-family: 'Pacifico', cursive;
+      background-color: #ffe5e5;
+      margin: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .social-icons i {
+      color: black;
+      font-size: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    } 
+</style>
+<body>
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fs-5  ">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Afriplates</a>
+
+      <!-- Hamburger Button (for small screens) -->
+
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+        <!-- Centered Nav Items -->
+        <ul class="navbar-nav mx-auto gap-lg-5" style="color: rgba(0, 0, 0, 0.975);">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social Icons on Right -->
+        <div class="social-icons d-flex gap-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr> 
+    <section class="container mt-5">
+  <div class="row">
+    
+    <!-- Main Blog Content -->
+    <div class="col-lg-8">
+      <h1 class="fw-bold mb-5">Our Latest Articles</h1>
+
+      <!-- Blog Row 1 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="./Assets/Jollof rice.jpg" class="img-fluid rounded shadow" alt="Jollof Rice">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold">The Secret to Perfect Jollof Rice</h2>
+          <p class="text-muted">
+            Discover the step-by-step process of making authentic Nigerian Jollof Rice,
+            with tips on choosing the best spices and achieving that smoky party flavor.
+          </p>
+          <a href="#" class="btn btn-dark btn-sm rounded-pill">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Row 2 -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6">
+          <img src="./Assets/Afang-Soup.jpeg" class="img-fluid rounded shadow" alt="Afang Soup">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold">Afang Soup: A Rich Nigerian Classic</h2>
+          <p class="text-muted">
+            Learn how to prepare Afang Soup, a traditional delicacy packed with flavor,
+            vegetables, and healthy proteins for a wholesome meal.
+          </p>
+          <a href="#" class="btn btn-dark btn-sm rounded-pill">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Row 3 -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="./Assets/tomato-stew.webp" class="img-fluid rounded shadow" alt="Tomato Stew">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold">How to Make the Perfect Tomato Stew</h2>
+          <p class="text-muted">
+            A Nigerian kitchen essential! This guide walks you through creating
+            a versatile tomato stew base that pairs with rice, yams, and more.
+          </p>
+          <a href="#" class="btn btn-dark btn-sm rounded-pill">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4 mt-5 mt-lg-0">
+      <!-- Search Bar -->
+      <div class="mb-5 p-4 bg-light rounded shadow-sm">
+        <h4 class="fw-bold mb-3">Search</h4>
+        <form>
+          <div class="input-group">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="Search recipes..."
+            >
+            <button class="btn btn-dark" type="submit">
+              <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Categories -->
+      <div class="mb-5 p-4 bg-light rounded shadow-sm">
+        <h4 class="fw-bold mb-3">Categories</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Rice Dishes</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Soups & Stews</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Healthy Meals</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Quick Recipes</a></li>
+        </ul>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="mb-5 p-4 bg-light rounded shadow-sm">
+        <h4 class="fw-bold mb-3">Recent Posts</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">5 Tips for Cooking Beans Faster</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">How to Balance Nigerian Meals</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Top 10 Nigerian Party Foods</a></li>
+        </ul>
+      </div>
+
+      <!-- Tags -->
+      <div class="p-4 bg-light rounded shadow-sm">
+        <h4 class="fw-bold mb-3">Tags</h4>
+        <div>
+          <a href="#" class="badge bg-dark text-white me-1 mb-2">Beans</a>
+          <a href="#" class="badge bg-dark text-white me-1 mb-2">Rice</a>
+          <a href="#" class="badge bg-dark text-white me-1 mb-2">Soup</a>
+          <a href="#" class="badge bg-dark text-white me-1 mb-2">Healthy</a>
+          <a href="#" class="badge bg-dark text-white me-1 mb-2">Quick</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <!-- Navigation Links -->
+    <ul class="nav justify-content-center mb-3">
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Copyright -->
+    <p class="mb-0 text-white">
+      &copy; 2025 <strong>Afriplates</strong>. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons CDN (add in your <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
